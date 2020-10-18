@@ -70,7 +70,7 @@ router.route('/register').post((req,res) => {
 
   router.route('/').get(passport.authenticate('jwt', { session: false }), (req,res) => {
     res.json({
-      _id: req.user._id,
+      _id: req.user.id,
       email: req.user.email,
       login: req.user.login,
       followers: req.user.followers,
