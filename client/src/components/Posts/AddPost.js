@@ -27,7 +27,7 @@ const styles = {
 
 class AddPost extends Component {
   constructor (props) {
-    super(props)
+    super()
     this.state = {
       text: ''
     }
